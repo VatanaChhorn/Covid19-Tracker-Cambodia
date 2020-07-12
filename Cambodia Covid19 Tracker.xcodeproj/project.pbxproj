@@ -13,6 +13,8 @@
 		891736AC24B6FF2100206336 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 891736AA24B6FF2100206336 /* Main.storyboard */; };
 		891736AE24B6FF2300206336 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 891736AD24B6FF2300206336 /* Assets.xcassets */; };
 		891736B124B6FF2300206336 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 891736AF24B6FF2300206336 /* LaunchScreen.storyboard */; };
+		89C6669724BB8033005FDF14 /* SF-Compact-Rounded-Medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = 89C6669524BB5903005FDF14 /* SF-Compact-Rounded-Medium.otf */; };
+		89C6669824BB8033005FDF14 /* SF-Compact-Rounded-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 89C6669624BB66E6005FDF14 /* SF-Compact-Rounded-Bold.otf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		891736AD24B6FF2300206336 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		891736B024B6FF2300206336 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		891736B224B6FF2300206336 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		89C6669524BB5903005FDF14 /* SF-Compact-Rounded-Medium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "SF-Compact-Rounded-Medium.otf"; path = "../../../../../Library/Fonts/SF-Compact-Rounded-Medium.otf"; sourceTree = "<group>"; };
+		89C6669624BB66E6005FDF14 /* SF-Compact-Rounded-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "SF-Compact-Rounded-Bold.otf"; path = "../../../../../Library/Fonts/SF-Compact-Rounded-Bold.otf"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -42,6 +46,8 @@
 			children = (
 				891736A324B6FF2000206336 /* Cambodia Covid19 Tracker */,
 				891736A224B6FF2000206336 /* Products */,
+				89C6669524BB5903005FDF14 /* SF-Compact-Rounded-Medium.otf */,
+				89C6669624BB66E6005FDF14 /* SF-Compact-Rounded-Bold.otf */,
 			);
 			sourceTree = "<group>";
 		};
@@ -125,6 +131,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				89C6669724BB8033005FDF14 /* SF-Compact-Rounded-Medium.otf in Resources */,
+				89C6669824BB8033005FDF14 /* SF-Compact-Rounded-Bold.otf in Resources */,
 				891736B124B6FF2300206336 /* LaunchScreen.storyboard in Resources */,
 				891736AE24B6FF2300206336 /* Assets.xcassets in Resources */,
 				891736AC24B6FF2100206336 /* Main.storyboard in Resources */,
