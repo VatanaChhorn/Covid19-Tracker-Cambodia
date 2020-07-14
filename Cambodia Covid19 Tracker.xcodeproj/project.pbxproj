@@ -13,8 +13,9 @@
 		891736AC24B6FF2100206336 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 891736AA24B6FF2100206336 /* Main.storyboard */; };
 		891736AE24B6FF2300206336 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 891736AD24B6FF2300206336 /* Assets.xcassets */; };
 		891736B124B6FF2300206336 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 891736AF24B6FF2300206336 /* LaunchScreen.storyboard */; };
-		89C6669724BB8033005FDF14 /* SF-Compact-Rounded-Medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = 89C6669524BB5903005FDF14 /* SF-Compact-Rounded-Medium.otf */; };
-		89C6669824BB8033005FDF14 /* SF-Compact-Rounded-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 89C6669624BB66E6005FDF14 /* SF-Compact-Rounded-Bold.otf */; };
+		891E307C24BDD90000D60E79 /* SF-Compact-Rounded-Medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = 89B570D824BDB668007694AB /* SF-Compact-Rounded-Medium.otf */; };
+		891E307D24BDD90000D60E79 /* SF-Compact-Rounded-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 89B570D724BDB668007694AB /* SF-Compact-Rounded-Bold.otf */; };
+		89B570DC24BDB6C6007694AB /* SecondScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89B570DB24BDB6C6007694AB /* SecondScreenViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,8 +27,9 @@
 		891736AD24B6FF2300206336 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		891736B024B6FF2300206336 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		891736B224B6FF2300206336 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		89C6669524BB5903005FDF14 /* SF-Compact-Rounded-Medium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "SF-Compact-Rounded-Medium.otf"; path = "../../../../../Library/Fonts/SF-Compact-Rounded-Medium.otf"; sourceTree = "<group>"; };
-		89C6669624BB66E6005FDF14 /* SF-Compact-Rounded-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "SF-Compact-Rounded-Bold.otf"; path = "../../../../../Library/Fonts/SF-Compact-Rounded-Bold.otf"; sourceTree = "<group>"; };
+		89B570D724BDB668007694AB /* SF-Compact-Rounded-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Compact-Rounded-Bold.otf"; sourceTree = "<group>"; };
+		89B570D824BDB668007694AB /* SF-Compact-Rounded-Medium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Compact-Rounded-Medium.otf"; sourceTree = "<group>"; };
+		89B570DB24BDB6C6007694AB /* SecondScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondScreenViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -46,8 +48,7 @@
 			children = (
 				891736A324B6FF2000206336 /* Cambodia Covid19 Tracker */,
 				891736A224B6FF2000206336 /* Products */,
-				89C6669524BB5903005FDF14 /* SF-Compact-Rounded-Medium.otf */,
-				89C6669624BB66E6005FDF14 /* SF-Compact-Rounded-Bold.otf */,
+				89B570D624BDB65D007694AB /* Bonus items */,
 			);
 			sourceTree = "<group>";
 		};
@@ -64,13 +65,47 @@
 			children = (
 				891736A424B6FF2100206336 /* AppDelegate.swift */,
 				891736A624B6FF2100206336 /* SceneDelegate.swift */,
-				891736A824B6FF2100206336 /* ViewController.swift */,
-				891736AA24B6FF2100206336 /* Main.storyboard */,
+				89B570D524BDB643007694AB /* M */,
+				89B570DA24BDB6A4007694AB /* V */,
+				89B570D924BDB693007694AB /* C */,
 				891736AD24B6FF2300206336 /* Assets.xcassets */,
 				891736AF24B6FF2300206336 /* LaunchScreen.storyboard */,
 				891736B224B6FF2300206336 /* Info.plist */,
 			);
 			path = "Cambodia Covid19 Tracker";
+			sourceTree = "<group>";
+		};
+		89B570D524BDB643007694AB /* M */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = M;
+			sourceTree = "<group>";
+		};
+		89B570D624BDB65D007694AB /* Bonus items */ = {
+			isa = PBXGroup;
+			children = (
+				89B570D824BDB668007694AB /* SF-Compact-Rounded-Medium.otf */,
+				89B570D724BDB668007694AB /* SF-Compact-Rounded-Bold.otf */,
+			);
+			name = "Bonus items";
+			sourceTree = "<group>";
+		};
+		89B570D924BDB693007694AB /* C */ = {
+			isa = PBXGroup;
+			children = (
+				891736A824B6FF2100206336 /* ViewController.swift */,
+				89B570DB24BDB6C6007694AB /* SecondScreenViewController.swift */,
+			);
+			path = C;
+			sourceTree = "<group>";
+		};
+		89B570DA24BDB6A4007694AB /* V */ = {
+			isa = PBXGroup;
+			children = (
+				891736AA24B6FF2100206336 /* Main.storyboard */,
+			);
+			path = V;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -131,8 +166,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				89C6669724BB8033005FDF14 /* SF-Compact-Rounded-Medium.otf in Resources */,
-				89C6669824BB8033005FDF14 /* SF-Compact-Rounded-Bold.otf in Resources */,
+				891E307C24BDD90000D60E79 /* SF-Compact-Rounded-Medium.otf in Resources */,
+				891E307D24BDD90000D60E79 /* SF-Compact-Rounded-Bold.otf in Resources */,
 				891736B124B6FF2300206336 /* LaunchScreen.storyboard in Resources */,
 				891736AE24B6FF2300206336 /* Assets.xcassets in Resources */,
 				891736AC24B6FF2100206336 /* Main.storyboard in Resources */,
@@ -146,6 +181,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				89B570DC24BDB6C6007694AB /* SecondScreenViewController.swift in Sources */,
 				891736A924B6FF2100206336 /* ViewController.swift in Sources */,
 				891736A524B6FF2100206336 /* AppDelegate.swift in Sources */,
 				891736A724B6FF2100206336 /* SceneDelegate.swift in Sources */,

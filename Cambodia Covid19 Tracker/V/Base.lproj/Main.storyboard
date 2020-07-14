@@ -262,7 +262,7 @@
                                                                                         </constraints>
                                                                                     </view>
                                                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cyn-3j-E3s">
-                                                                                        <rect key="frame" x="236.66666666666663" y="0.0" width="118.33333333333334" height="181.66666666666666"/>
+                                                                                        <rect key="frame" x="236.66666666666666" y="0.0" width="118.33333333333334" height="181.66666666666666"/>
                                                                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                                     </view>
                                                                                 </subviews>
