@@ -18,6 +18,7 @@
 		897EFC0924BEF00E00A65E3D /* CoronaVirusModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 897EFC0824BEF00E00A65E3D /* CoronaVirusModel.swift */; };
 		897EFC0B24BEF01C00A65E3D /* CoronaVirusData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 897EFC0A24BEF01C00A65E3D /* CoronaVirusData.swift */; };
 		897EFC0D24BEF02900A65E3D /* CoronaVirusManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 897EFC0C24BEF02900A65E3D /* CoronaVirusManager.swift */; };
+		897EFC0F24BF33DF00A65E3D /* BasicSources.swift in Sources */ = {isa = PBXBuildFile; fileRef = 897EFC0E24BF33DF00A65E3D /* BasicSources.swift */; };
 		89B570DC24BDB6C6007694AB /* SecondScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89B570DB24BDB6C6007694AB /* SecondScreenViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -33,6 +34,7 @@
 		897EFC0824BEF00E00A65E3D /* CoronaVirusModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoronaVirusModel.swift; sourceTree = "<group>"; };
 		897EFC0A24BEF01C00A65E3D /* CoronaVirusData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoronaVirusData.swift; sourceTree = "<group>"; };
 		897EFC0C24BEF02900A65E3D /* CoronaVirusManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoronaVirusManager.swift; sourceTree = "<group>"; };
+		897EFC0E24BF33DF00A65E3D /* BasicSources.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasicSources.swift; sourceTree = "<group>"; };
 		89B570D724BDB668007694AB /* SF-Compact-Rounded-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Compact-Rounded-Bold.otf"; sourceTree = "<group>"; };
 		89B570D824BDB668007694AB /* SF-Compact-Rounded-Medium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Compact-Rounded-Medium.otf"; sourceTree = "<group>"; };
 		89B570DB24BDB6C6007694AB /* SecondScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondScreenViewController.swift; sourceTree = "<group>"; };
@@ -84,6 +86,7 @@
 		89B570D524BDB643007694AB /* M */ = {
 			isa = PBXGroup;
 			children = (
+				897EFC0E24BF33DF00A65E3D /* BasicSources.swift */,
 				897EFC0C24BEF02900A65E3D /* CoronaVirusManager.swift */,
 				897EFC0824BEF00E00A65E3D /* CoronaVirusModel.swift */,
 				897EFC0A24BEF01C00A65E3D /* CoronaVirusData.swift */,
@@ -193,6 +196,7 @@
 				897EFC0924BEF00E00A65E3D /* CoronaVirusModel.swift in Sources */,
 				89B570DC24BDB6C6007694AB /* SecondScreenViewController.swift in Sources */,
 				891736A924B6FF2100206336 /* MainController.swift in Sources */,
+				897EFC0F24BF33DF00A65E3D /* BasicSources.swift in Sources */,
 				897EFC0D24BEF02900A65E3D /* CoronaVirusManager.swift in Sources */,
 				891736A524B6FF2100206336 /* AppDelegate.swift in Sources */,
 				891736A724B6FF2100206336 /* SceneDelegate.swift in Sources */,

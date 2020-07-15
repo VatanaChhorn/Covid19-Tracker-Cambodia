@@ -16,10 +16,11 @@ protocol CoronaVirusManagerDelegate {
 struct CoronaVirusManager {
     
     var delegate: CoronaVirusManagerDelegate?
+    var source = Sources()
     
-    let apiURL = "https://api.covid19api.com/summary"
-
+ 
     func getTheDataFromAPI() -> Void {
+        let apiURL = source.coronaVirusAPILink
         performReqeust(apiURL: apiURL)
     }
     

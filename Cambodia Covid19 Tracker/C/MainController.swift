@@ -13,6 +13,7 @@ class MainController: UIViewController {
     @IBOutlet weak var totalCasesLabel: UILabel!
     
     var coronaVirusManager = CoronaVirusManager()
+    let source = Sources()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -24,9 +25,10 @@ class MainController: UIViewController {
     
     
     @IBAction func learnMoreButtonClicked(_ sender: UIButton) {
+        UIApplication.shared.open(URL(string: source.learnMoreLink)!)
     }
     @IBAction func liveUpdateButtonClicked(_ sender: UIButton) {
-        performSegue(withIdentifier: "performSecondScreen", sender: self)
+        performSegue(withIdentifier: source.secondSreenSegue, sender: self)
         
     }
     
