@@ -9,12 +9,15 @@
 /* Begin PBXBuildFile section */
 		891736A524B6FF2100206336 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 891736A424B6FF2100206336 /* AppDelegate.swift */; };
 		891736A724B6FF2100206336 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 891736A624B6FF2100206336 /* SceneDelegate.swift */; };
-		891736A924B6FF2100206336 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 891736A824B6FF2100206336 /* ViewController.swift */; };
+		891736A924B6FF2100206336 /* MainController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 891736A824B6FF2100206336 /* MainController.swift */; };
 		891736AC24B6FF2100206336 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 891736AA24B6FF2100206336 /* Main.storyboard */; };
 		891736AE24B6FF2300206336 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 891736AD24B6FF2300206336 /* Assets.xcassets */; };
 		891736B124B6FF2300206336 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 891736AF24B6FF2300206336 /* LaunchScreen.storyboard */; };
 		891E307C24BDD90000D60E79 /* SF-Compact-Rounded-Medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = 89B570D824BDB668007694AB /* SF-Compact-Rounded-Medium.otf */; };
 		891E307D24BDD90000D60E79 /* SF-Compact-Rounded-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 89B570D724BDB668007694AB /* SF-Compact-Rounded-Bold.otf */; };
+		897EFC0924BEF00E00A65E3D /* CoronaVirusModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 897EFC0824BEF00E00A65E3D /* CoronaVirusModel.swift */; };
+		897EFC0B24BEF01C00A65E3D /* CoronaVirusData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 897EFC0A24BEF01C00A65E3D /* CoronaVirusData.swift */; };
+		897EFC0D24BEF02900A65E3D /* CoronaVirusManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 897EFC0C24BEF02900A65E3D /* CoronaVirusManager.swift */; };
 		89B570DC24BDB6C6007694AB /* SecondScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89B570DB24BDB6C6007694AB /* SecondScreenViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -22,11 +25,14 @@
 		891736A124B6FF2000206336 /* Cambodia Covid19 Tracker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Cambodia Covid19 Tracker.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		891736A424B6FF2100206336 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		891736A624B6FF2100206336 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		891736A824B6FF2100206336 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		891736A824B6FF2100206336 /* MainController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainController.swift; sourceTree = "<group>"; };
 		891736AB24B6FF2100206336 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		891736AD24B6FF2300206336 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		891736B024B6FF2300206336 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		891736B224B6FF2300206336 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		897EFC0824BEF00E00A65E3D /* CoronaVirusModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoronaVirusModel.swift; sourceTree = "<group>"; };
+		897EFC0A24BEF01C00A65E3D /* CoronaVirusData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoronaVirusData.swift; sourceTree = "<group>"; };
+		897EFC0C24BEF02900A65E3D /* CoronaVirusManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoronaVirusManager.swift; sourceTree = "<group>"; };
 		89B570D724BDB668007694AB /* SF-Compact-Rounded-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Compact-Rounded-Bold.otf"; sourceTree = "<group>"; };
 		89B570D824BDB668007694AB /* SF-Compact-Rounded-Medium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Compact-Rounded-Medium.otf"; sourceTree = "<group>"; };
 		89B570DB24BDB6C6007694AB /* SecondScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondScreenViewController.swift; sourceTree = "<group>"; };
@@ -78,6 +84,9 @@
 		89B570D524BDB643007694AB /* M */ = {
 			isa = PBXGroup;
 			children = (
+				897EFC0C24BEF02900A65E3D /* CoronaVirusManager.swift */,
+				897EFC0824BEF00E00A65E3D /* CoronaVirusModel.swift */,
+				897EFC0A24BEF01C00A65E3D /* CoronaVirusData.swift */,
 			);
 			path = M;
 			sourceTree = "<group>";
@@ -94,7 +103,7 @@
 		89B570D924BDB693007694AB /* C */ = {
 			isa = PBXGroup;
 			children = (
-				891736A824B6FF2100206336 /* ViewController.swift */,
+				891736A824B6FF2100206336 /* MainController.swift */,
 				89B570DB24BDB6C6007694AB /* SecondScreenViewController.swift */,
 			);
 			path = C;
@@ -181,10 +190,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				897EFC0924BEF00E00A65E3D /* CoronaVirusModel.swift in Sources */,
 				89B570DC24BDB6C6007694AB /* SecondScreenViewController.swift in Sources */,
-				891736A924B6FF2100206336 /* ViewController.swift in Sources */,
+				891736A924B6FF2100206336 /* MainController.swift in Sources */,
+				897EFC0D24BEF02900A65E3D /* CoronaVirusManager.swift in Sources */,
 				891736A524B6FF2100206336 /* AppDelegate.swift in Sources */,
 				891736A724B6FF2100206336 /* SceneDelegate.swift in Sources */,
+				897EFC0B24BEF01C00A65E3D /* CoronaVirusData.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -15,10 +15,10 @@
         </array>
     </customFonts>
     <scenes>
-        <!--View Controller-->
+        <!--Main Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Cambodia_Covid19_Tracker" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="MainController" customModule="Cambodia_Covid19_Tracker" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="wQa-4B-9Ua">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -100,7 +100,7 @@
                                                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="hIO-VT-A1y">
                                                                                 <rect key="frame" x="16.666666666666686" y="27.666666666666657" width="150" height="96"/>
                                                                                 <subviews>
-                                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="144" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="V7d-jE-UAf" userLabel="Total Cases Label">
+                                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="V7d-jE-UAf" userLabel="Total Cases Label">
                                                                                         <rect key="frame" x="0.0" y="0.0" width="150" height="60"/>
                                                                                         <fontDescription key="fontDescription" name="SFCompactRounded-Bold" family="SF Compact Rounded" pointSize="50"/>
                                                                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -237,6 +237,9 @@
                                                                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vX1-OV-890">
                                                                                                                 <rect key="frame" x="10" y="0.0" width="186.66666666666666" height="51.333333333333336"/>
                                                                                                                 <state key="normal" backgroundImage="Learn More Button"/>
+                                                                                                                <connections>
+                                                                                                                    <action selector="learnMoreButtonClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Tt1-5R-ukb"/>
+                                                                                                                </connections>
                                                                                                             </button>
                                                                                                         </subviews>
                                                                                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -314,7 +317,8 @@
                                                                                                 <rect key="frame" x="4.9999999999999964" y="4.9999999999999964" width="54.666666666666657" height="60.666666666666657"/>
                                                                                                 <state key="normal" backgroundImage="Live Upate Button"/>
                                                                                                 <connections>
-                                                                                                    <segue destination="CKb-Po-RMh" kind="show" id="l2B-70-wNI"/>
+                                                                                                    <action selector="liveUpdateButtonClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="bOO-HM-B6i"/>
+                                                                                                    <segue destination="CKb-Po-RMh" kind="show" identifier="performSecondScreen" id="l2B-70-wNI"/>
                                                                                                 </connections>
                                                                                             </button>
                                                                                         </subviews>
@@ -395,6 +399,9 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="p4E-W8-f1o"/>
                     </view>
+                    <connections>
+                        <outlet property="totalCasesLabel" destination="V7d-jE-UAf" id="X8L-QT-JLW"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
@@ -599,6 +606,9 @@
                                                 <state key="normal" backgroundImage="chevron.compact.down" catalog="system">
                                                     <color key="titleColor" red="0.26274509800000001" green="0.34509803919999998" blue="0.3921568627" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 </state>
+                                                <connections>
+                                                    <action selector="dismissButtonClicked:" destination="CKb-Po-RMh" eventType="touchUpInside" id="l8M-2K-B5P"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -647,10 +657,16 @@
                         <viewLayoutGuide key="safeArea" id="YOi-64-ghY"/>
                     </view>
                     <navigationItem key="navigationItem" id="Svc-ps-upZ"/>
+                    <connections>
+                        <outlet property="deathCases" destination="KLm-ib-Dac" id="OKW-CZ-ASM"/>
+                        <outlet property="recoveredCases" destination="VU2-gi-JD1" id="5Z5-vV-zKx"/>
+                        <outlet property="todayCases" destination="F9b-xY-giz" id="LcD-HD-hLV"/>
+                        <outlet property="totalCases" destination="a3M-Dv-eLa" id="cvD-Yb-zY1"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rZv-Oi-Z3Q" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="857.97101449275374" y="109.82142857142857"/>
+            <point key="canvasLocation" x="856.79999999999995" y="109.35960591133005"/>
         </scene>
     </scenes>
     <resources>

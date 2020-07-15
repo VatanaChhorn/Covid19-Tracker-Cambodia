@@ -9,22 +9,37 @@
 import UIKit
 
 class SecondScreenViewController: UIViewController {
-
+    @IBOutlet weak var totalCases: UILabel!
+    @IBOutlet weak var todayCases: UILabel!
+    @IBOutlet weak var recoveredCases: UILabel!
+    @IBOutlet weak var deathCases: UILabel!
+    
+    var coronaVirusManager = CoronaVirusManager()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+            coronaVirusManager.delegate = self
+        coronaVirusManager.getTheDataFromAPI()
+ 
+    }
+    
+    @IBAction func dismissButtonClicked(_ sender: UIButton) {
+        self.dismiss(animated: true, completion: nil)
     }
     
 
-    /*
-    // MARK: - Navigation
+}
 
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+extension SecondScreenViewController: CoronaVirusManagerDelegate
+{
+    func didUpdateTheCases(coronaVirusCases: CoronaVirusModel) {
+        DispatchQueue.main.async {
+                self.totalCases.text = coronaVirusCases.getTotalCases
+                 self.todayCases.text = String(coronaVirusCases.totalNewCases)
+                 self.recoveredCases.text = String(coronaVirusCases.totalRecovered)
+                 self.deathCases.text = String(coronaVirusCases.totalDeath)
+        }
     }
-    */
-
+    
+    
 }
