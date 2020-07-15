@@ -1,5 +1,5 @@
 //
-//  CoronaVirusModel.swift
+//  BasicSources.swift
 //  Cambodia Covid19 Tracker
 //
 //  Created by Chhorn Vatana on 7/15/20.
