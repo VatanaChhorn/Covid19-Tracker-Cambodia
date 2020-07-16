@@ -2,9 +2,10 @@
 
 ### Overview 
 
-*An IOS application which getting the data from a trustable website (API) in order to show the Covid19 cases overview in Cambodia.*}
+An IOS application which getting the data from a trustable website (API) in order to show the Covid19 cases overview in Cambodia.
 
 **Proclaiming**
+
 > I don't own the UIDesign, Half of them are the free Illustrations Vectors on the internet. 
 
 > It's just learning project. Therefore, if the **owner** does not happy with your pictures in this project. 
@@ -28,6 +29,6 @@
 - Add the graph of Corona Virus Cases in the SecondScreen. 
 
 ### Added Opinion
-'
+
 *It's basically my self-learning project, most parts are conducting using the JSON Decoder in swift. I used StoryBoard in this project to layout stuffs that 
 will appear on the screen, as well as Adobe Xd, and Illustrator for some pieces for the UI.* 
