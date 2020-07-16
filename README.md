@@ -26,7 +26,8 @@ An IOS application which getting the data from a trustable website (API) in orde
 
 - Push notification every time the API Updated. 
 - Alert the user when the internet is disconnected. 
-- Add the graph of Corona Virus Cases in the SecondScreen. 
+- Add the graph of Corona Virus Cases in the SecondScreen.
+- Switching between Cambodia, and Global data. 
 
 ### Added Opinion
 
