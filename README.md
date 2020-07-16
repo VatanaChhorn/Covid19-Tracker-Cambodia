@@ -22,7 +22,7 @@ An IOS application which getting the data from a trustable website (API) in orde
 - Providing accurate statistic. 
 - Fast, easy, and convenient for user to check the data. 
 
-### Things to working on 
+### Things to be working on 
 
 - Push notification every time the API Updated. 
 - Alert the user when the internet is disconnected. 
