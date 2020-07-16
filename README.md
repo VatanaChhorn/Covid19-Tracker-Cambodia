@@ -10,12 +10,11 @@ An IOS application which getting the data from a trustable website (API) in orde
 
 > It's just learning project. Therefore, if the **owner** does not happy with your pictures in this project. 
 
-> Please feel free to email me , I will consider removing them from the project. 
+> Please feel free to email me ,I will consider removing them from the project. 
 
 ### Picture of the application
 
 ![Mock_up_image](https://github.com/VatanaChhorn/Covid19-Tracker-Cambodia/blob/master/MockUP.jpg)
-
 
 ### Tasks 
 
@@ -24,6 +23,7 @@ An IOS application which getting the data from a trustable website (API) in orde
 - Fast, easy, and convenient for user to check the data. 
 
 ### Things to working on 
+
 - Push notification every time the API Updated. 
 - Alert the user when the internet is disconnected. 
 - Add the graph of Corona Virus Cases in the SecondScreen. 
