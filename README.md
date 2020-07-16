@@ -1,8 +1,17 @@
 # Covid19 Tracker Cambodia
 
-*An IOS application which getting the data from a trustable website (API) in order to show the Covid19 cases overview in Cambodia.*
+###Overview 
 
-##APP Pictures 
+*An IOS application which getting the data from a trustable website (API) in order to show the Covid19 cases overview in Cambodia.*}
+
+**Proclaiming*
+> I don't own the UIDesign, Half of them are the free Illustrations Vectors on the internet. 
+> It's just learning project. 
+> If the **owner** does not want your own picture on this project. 
+> Please feel free to email me `Onlyvatana22@gmail.com`, I will consider removing them from the project. 
+
+###Picture of the application
+
 ![Mock_up_image](https://github.com/VatanaChhorn/Covid19-Tracker-Cambodia/blob/master/MockUP.jpg)
 
 
