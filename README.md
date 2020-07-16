@@ -3,6 +3,8 @@
 *An IOS application which getting the data from a trustable website (API) in order to show the Covid19 cases overview in Cambodia.*
 
 ##APP Pictures 
+![Mock_up_image](https://github.com/VatanaChhorn/Covid19-Tracker-Cambodia/blob/master/MockUP.jpg)
+
 
 ##Tasks 
 //Specify the purpose behind the app. 
