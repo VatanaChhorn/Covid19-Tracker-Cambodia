@@ -12,4 +12,11 @@ struct Sources {
     let learnMoreLink = "https://www.who.int/emergencies/diseases/novel-coronavirus-2019/question-and-answers-hub/q-a-detail/q-a-coronaviruses#:~:text=symptoms"
     let secondSreenSegue = "performSecondScreen"
     let coronaVirusAPILink = "https://api.covid19api.com/summary"
+    
+        struct Userdefualts {
+        static let newCasesData = "NewCasesData"
+        static let recoveredCasesData = "RecoverCasesData"
+        static let todayCasesData = "TodayCasesData"
+        static let deathCasesData = "DeathCasesData"
+    }
 }

@@ -14,32 +14,30 @@ class SecondScreenViewController: UIViewController {
     @IBOutlet weak var recoveredCases: UILabel!
     @IBOutlet weak var deathCases: UILabel!
     
-    var coronaVirusManager = CoronaVirusManager()
-    
+   
+    //MARK: - ViewDidLoad
     override func viewDidLoad() {
         super.viewDidLoad()
-            coronaVirusManager.delegate = self
-        coronaVirusManager.getTheDataFromAPI()
- 
+        
+        //Call the default data
+        recoveredCases.text = String(UserDefaults.standard.integer(forKey: Sources.Userdefualts.recoveredCasesData))
+        
+        totalCases.text = String(UserDefaults.standard.integer(forKey: Sources.Userdefualts.newCasesData))
+        
+        todayCases.text = String(UserDefaults.standard.integer(forKey: Sources.Userdefualts.todayCasesData))
+        
+        deathCases.text = String(UserDefaults.standard.integer(forKey: Sources.Userdefualts.deathCasesData))
+        
+        
     }
     
+    //MARK: - Button functions
     @IBAction func dismissButtonClicked(_ sender: UIButton) {
         self.dismiss(animated: true, completion: nil)
     }
     
-
-}
-
-extension SecondScreenViewController: CoronaVirusManagerDelegate
-{
-    func didUpdateTheCases(coronaVirusCases: CoronaVirusModel) {
-        DispatchQueue.main.async {
-                self.totalCases.text = coronaVirusCases.getTotalCases
-                 self.todayCases.text = String(coronaVirusCases.totalNewCases)
-                 self.recoveredCases.text = String(coronaVirusCases.totalRecovered)
-                 self.deathCases.text = String(coronaVirusCases.totalDeath)
-        }
-    }
-    
     
 }
+    
+    
+
