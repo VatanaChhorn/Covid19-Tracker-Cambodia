@@ -22,6 +22,10 @@ An IOS application which getting the data from a trustable website (API) in orde
 - Providing accurate statistic. 
 - Fast, easy, and convenient for user to check the data. 
 
+### Updated 
+
+- Automatically add the API Fetching data to Userdefault. 
+
 ### Things to be working on 
 
 - Push notification every time the API Updated. 
