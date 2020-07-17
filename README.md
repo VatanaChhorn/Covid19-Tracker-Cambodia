@@ -6,7 +6,7 @@ An IOS application which getting the data from a trustable website (API) in orde
 
 **Proclaiming**
 
-> I don't own the UIDesign, Half of them are the free Illustrations Vectors on the internet. 
+> I don't own the UIDesign, some of them are the free Illustrations Vectors on the internet. 
 
 > It's just learning project. Therefore, if the **owner** does not happy with your own pictures in this project. 
 
