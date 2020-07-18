@@ -23,7 +23,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		891736A124B6FF2000206336 /* Covid19 Tracker Cambodia.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Covid19 Tracker Cambodia.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		891736A124B6FF2000206336 /* Covid19 Tracker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Covid19 Tracker.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		891736A424B6FF2100206336 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		891736A624B6FF2100206336 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		891736A824B6FF2100206336 /* MainController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainController.swift; sourceTree = "<group>"; };
@@ -63,7 +63,7 @@
 		891736A224B6FF2000206336 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				891736A124B6FF2000206336 /* Covid19 Tracker Cambodia.app */,
+				891736A124B6FF2000206336 /* Covid19 Tracker.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -137,7 +137,7 @@
 			);
 			name = "Cambodia Covid19 Tracker";
 			productName = "Cambodia Covid19 Tracker";
-			productReference = 891736A124B6FF2000206336 /* Covid19 Tracker Cambodia.app */;
+			productReference = 891736A124B6FF2000206336 /* Covid19 Tracker.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -352,7 +352,7 @@
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.vatanachhorn.Cambodia-Covid19-Tracker";
-				PRODUCT_NAME = "Covid19 Tracker Cambodia";
+				PRODUCT_NAME = "Covid19 Tracker";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -370,7 +370,7 @@
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.vatanachhorn.Cambodia-Covid19-Tracker";
-				PRODUCT_NAME = "Covid19 Tracker Cambodia";
+				PRODUCT_NAME = "Covid19 Tracker";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
