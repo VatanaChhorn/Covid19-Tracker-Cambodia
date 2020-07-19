@@ -52,7 +52,7 @@ extension MainController: CoronaVirusManagerDelegate
             self.totalCasesLabel.text = coronaVirusCases.getTotalCases
             
             //setup default datas
-            if coronaVirusCases.totalNewCases != UserDefaults.standard.integer(forKey: Sources.Userdefualts.newCasesData)
+            if ( coronaVirusCases.totalNewCases != UserDefaults.standard.integer(forKey: Sources.Userdefualts.todayCasesData) ) || ( coronaVirusCases.totalCases != UserDefaults.standard.integer(forKey: Sources.Userdefualts.newCasesData)) 
             {
                 UserDefaults.standard.set(coronaVirusCases.totalCases, forKey: Sources.Userdefualts.newCasesData)
                 UserDefaults.standard.set(coronaVirusCases.totalRecovered, forKey: Sources.Userdefualts.recoveredCasesData)
