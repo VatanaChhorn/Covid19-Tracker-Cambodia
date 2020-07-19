@@ -9,7 +9,7 @@
 import Foundation
 
 struct Sources {
-    let learnMoreLink = "https://www.facebook.com/MinistryofHealthofCambodia/about"
+    let learnMoreLink = "https://www.facebook.com/MinistryofHealthofCambodia"
     let secondSreenSegue = "performSecondScreen"
     let coronaVirusAPILink = "https://api.covid19api.com/summary"
     
