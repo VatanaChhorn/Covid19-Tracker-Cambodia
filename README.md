@@ -31,7 +31,7 @@ An IOS application which getting the data from a trustable website (API) in orde
 `The Api's dead sometimes, I barely find a better API Provider that provides better services than the one that I'm currently using. 
 However, the updating data on the API could be processed 5-10 hours later than Cambodian time.`
 
-`It's hard to track up since the goverment does not providing any API for the developers.` 
+`*Update: I found the API provider in RapidAPI which updating the data every 15 minutes, I will tryna find some spare time to update the API Link.` 
 
 ### Things to be working on 
 
