@@ -44,3 +44,18 @@ However, the updating data by the API could be processed 5-10 hours later than C
 
 *It's basically my self-learning project, most parts are conducting using the JSON Decoder in swift. I used StoryBoard in this project to layout stuffs that 
 will appear on the screen, as well as Adobe Xd, and Illustrator for some pieces to decorate the UI.* 
+
+### Connect with me: :octocat:
+
+
+<p align="left">
+<a href="https://www.instagram.com/vatana.chhorn/" target="blank"><img align="center" src="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/instagram.svg" alt="kushal.bhanot" height="60" width="60" /></a> &nbsp;&nbsp;
+<a href="https://twitter.com/vatana_chhorn" target="blank"><img align="center" src="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/twitter.svg" alt="bhanot_kushal" height="60" width="60" /></a> &nbsp;&nbsp;
+<a href="https://www.facebook.com/vatan4c" target="blank"><img align="center" src="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/facebook.svg" alt="kushal.bhanot.98" height="60" width="60" /></a> &nbsp;&nbsp;
+<a href="https://open.spotify.com/user/onlyvatana23?si=-McUZw0zTj-a8SvbVe1qZA" target="blank"><img align="center" src="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/spotify.svg" alt="kushal.bhanot.98" height="60" width="60" /></a> &nbsp;&nbsp;
+  <a href="https://www.goodreads.com/user/show/83098234-vatana-chhorn" target="blank"><img align="center" src="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/goodreads.svg" alt="kushal.bhanot.98" height="60" width="60" /></a> &nbsp;&nbsp;
+   <a href="https://unsplash.com/@vatanachhorn" target="blank"><img align="center" src="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/unsplash.svg" alt="kushal.bhanot.98" height="60" width="60" /></a> &nbsp;&nbsp;
+</p>
+
+
+**Do ⭐ my repository if you find my project interesting, at least your star could make someone's day.**  
