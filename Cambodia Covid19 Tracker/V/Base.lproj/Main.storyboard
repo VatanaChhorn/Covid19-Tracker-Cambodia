@@ -18,7 +18,7 @@
         <!--Main Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="MainController" customModule="Covid19_Tracker_Cambodia" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="MainController" customModule="Covid19_Tracker" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="wQa-4B-9Ua">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -410,7 +410,7 @@
         <!--Second Screen View Controller-->
         <scene sceneID="X28-Vx-tQF">
             <objects>
-                <viewController id="CKb-Po-RMh" customClass="SecondScreenViewController" customModule="Covid19_Tracker_Cambodia" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="CKb-Po-RMh" customClass="SecondScreenViewController" customModule="Covid19_Tracker" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="McZ-HQ-K2S">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="758"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -422,7 +422,7 @@
                                         <rect key="frame" x="0.0" y="0.0" width="375" height="389"/>
                                         <subviews>
                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Upper Background" translatesAutoresizingMaskIntoConstraints="NO" id="kOa-B7-B2m">
-                                                <rect key="frame" x="0.0" y="0.0" width="375" height="389"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="375" height="374"/>
                                             </imageView>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="6HY-FJ-W4d">
                                                 <rect key="frame" x="0.0" y="25" width="375" height="364"/>
@@ -617,7 +617,7 @@
                                             <constraint firstItem="RWQ-bT-6du" firstAttribute="centerX" secondItem="Hsg-aw-jG7" secondAttribute="centerX" id="Ceh-2U-QFe"/>
                                             <constraint firstAttribute="bottom" secondItem="6HY-FJ-W4d" secondAttribute="bottom" id="EPy-R9-f2r"/>
                                             <constraint firstItem="RWQ-bT-6du" firstAttribute="top" secondItem="Hsg-aw-jG7" secondAttribute="top" constant="10" id="Jkg-A6-ddr"/>
-                                            <constraint firstAttribute="bottom" secondItem="kOa-B7-B2m" secondAttribute="bottom" id="Ke6-vA-Vgo"/>
+                                            <constraint firstAttribute="bottom" secondItem="kOa-B7-B2m" secondAttribute="bottom" constant="15" id="Ke6-vA-Vgo"/>
                                             <constraint firstItem="RWQ-bT-6du" firstAttribute="centerY" secondItem="Hsg-aw-jG7" secondAttribute="centerY" constant="-170" id="Stc-yb-2kw"/>
                                             <constraint firstItem="kOa-B7-B2m" firstAttribute="leading" secondItem="Hsg-aw-jG7" secondAttribute="leading" id="U2a-Vn-FWX"/>
                                             <constraint firstItem="6HY-FJ-W4d" firstAttribute="top" secondItem="Hsg-aw-jG7" secondAttribute="top" constant="25" id="dT8-jB-yU1"/>
@@ -687,7 +687,7 @@
         <image name="Region Column" width="54" height="37"/>
         <image name="TItile Bar" width="140" height="46"/>
         <image name="Today Background" width="146" height="85"/>
-        <image name="Upper Background" width="375" height="340"/>
+        <image name="Upper Background" width="376" height="340"/>
         <image name="chevron.compact.down" catalog="system" width="128" height="43"/>
     </resources>
 </document>
