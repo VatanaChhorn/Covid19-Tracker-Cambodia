@@ -13,20 +13,20 @@ class SecondScreenViewController: UIViewController {
     @IBOutlet weak var todayCases: UILabel!
     @IBOutlet weak var recoveredCases: UILabel!
     @IBOutlet weak var deathCases: UILabel!
-    
+    let defaults = UserDefaults.standard
    
     //MARK: - ViewDidLoad
     override func viewDidLoad() {
         super.viewDidLoad()
         
         //Call the default data
-        recoveredCases.text = String(UserDefaults.standard.integer(forKey: Sources.Userdefualts.recoveredCasesData))
+        recoveredCases.text = String(defaults.integer(forKey: Sources.Userdefualts.recoveredCasesData))
         
-        totalCases.text = String(UserDefaults.standard.integer(forKey: Sources.Userdefualts.newCasesData))
+        totalCases.text = String(defaults.integer(forKey: Sources.Userdefualts.newCasesData))
         
-        todayCases.text = String(UserDefaults.standard.integer(forKey: Sources.Userdefualts.todayCasesData))
+        todayCases.text = String(defaults.integer(forKey: Sources.Userdefualts.todayCasesData))
         
-        deathCases.text = String(UserDefaults.standard.integer(forKey: Sources.Userdefualts.deathCasesData))
+        deathCases.text = String(defaults.integer(forKey: Sources.Userdefualts.deathCasesData))
         
         
     }
