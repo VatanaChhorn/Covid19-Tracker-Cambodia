@@ -32,7 +32,7 @@ An IOS application which getting the data from a trustable website (API) in orde
 
 ### Things to be working on 
 
-- Push notification every time the API Updated. 
+- [x] Push notification every day at 8 Am. 
 - Alert the user when the internet is disconnected. 
 - Add the graph of Corona Virus Cases in the SecondScreen. (From the Cambodian Government Embed Link) 
 - Switching between Cambodia, and Global data. 
