@@ -34,6 +34,7 @@ struct CoronaVirusManager {
                 if error != nil
                 {
                     print("error block 1: \(error!)")
+                    UserDefaults.standard.set(true, forKey: Sources.Userdefualts.checkInternetConnection)
                     return
                 }
                 if let safeData = data
@@ -42,7 +43,6 @@ struct CoronaVirusManager {
                    {
                     self.delegate?.didUpdateTheCases(coronaVirusCases: casesOverview)
                    }
-                    
                 }
             }
             

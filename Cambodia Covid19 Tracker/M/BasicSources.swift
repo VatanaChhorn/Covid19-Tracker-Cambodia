@@ -13,10 +13,11 @@ struct Sources {
     let secondSreenSegue = "performSecondScreen"
     let coronaVirusAPILink = "https://api.covid19api.com/summary"
     
-        struct Userdefualts {
+    struct Userdefualts {
         static let newCasesData = "NewCasesData"
         static let recoveredCasesData = "RecoverCasesData"
         static let todayCasesData = "TodayCasesData"
         static let deathCasesData = "DeathCasesData"
+        static let checkInternetConnection = "internet"
     }
 }

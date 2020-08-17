@@ -11,7 +11,7 @@ import UIKit
 class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
     var window: UIWindow?
-
+    let defaults = UserDefaults.standard
 
     func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options connectionOptions: UIScene.ConnectionOptions) {
         // Use this method to optionally configure and attach the UIWindow `window` to the provided UIWindowScene `scene`.
@@ -21,6 +21,8 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
     }
 
     func sceneDidDisconnect(_ scene: UIScene) {
+        //Set internet connection to false
+        defaults.set(false, forKey: Sources.Userdefualts.checkInternetConnection)
     }
 
     func sceneDidBecomeActive(_ scene: UIScene) {
@@ -33,12 +35,14 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
     }
 
     func sceneDidEnterBackground(_ scene: UIScene) {
+       
+        
         print("sceneDidEnterBackground")
                 let content = UNMutableNotificationContent()
                 content.sound = UNNotificationSound.default
                 content.title = "Covid19 Tracker Cambodia"
                 content.subtitle = "Bring your mask every time you're going out!"
-        content.body = "The last time you checked was \(UserDefaults.standard.integer(forKey: "NewCasesData")) cases in total.\nDon't be panic, strictly follow recommendations of the local government and stay safe. ✨"
+        content.body = "The last time you checked was \(defaults.integer(forKey: Sources.Userdefualts.newCasesData)) cases in total.\nDon't be panic, strictly follow recommendations of the local government and stay safe. ✨"
         
                 var dateComp = DateComponents()
                 dateComp.hour = 8
@@ -52,7 +56,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
                     }
     }
 
-
+       
 }
 
 }

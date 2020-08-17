@@ -22,6 +22,19 @@ class MainController: UIViewController {
         //Declare delegate and call the functions
         coronaVirusManager.delegate = self
         coronaVirusManager.getTheDataFromAPI()
+        DispatchQueue.main.async {
+            print(self.defaults.bool(forKey: Sources.Userdefualts.checkInternetConnection))
+            if self.defaults.bool(forKey: Sources.Userdefualts.checkInternetConnection) == true {
+                let alert = UIAlertController(title: "Connection Failed 🤯", message: "The Internet connection appears to be offline.", preferredStyle: .alert)
+                alert.addAction(UIAlertAction(title: "Understood", style: .default, handler:  { (action) in
+                    self.view.alpha = 1
+                }))
+                self.view.alpha = 0.2
+                self.present(alert, animated: true, completion: nil)
+                print("Triggered")
+            }
+            
+        }
         
         //Display the defualtData to the Screen
         let defaultData = UserDefaults.standard.integer(forKey: Sources.Userdefualts.newCasesData)
