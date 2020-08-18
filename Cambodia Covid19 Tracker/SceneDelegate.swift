@@ -26,6 +26,13 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
     }
 
     func sceneDidBecomeActive(_ scene: UIScene) {
+        let center = UNUserNotificationCenter.current()
+        center.requestAuthorization(options: [.alert, .sound, .badge]) { granted, error in
+            
+            if let error = error {
+                print("User did not grand permission: \(error)")
+            }
+        }
     }
 
     func sceneWillResignActive(_ scene: UIScene) {
