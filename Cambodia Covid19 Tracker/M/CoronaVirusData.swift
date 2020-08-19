@@ -10,6 +10,7 @@ import Foundation
 
 struct CoronaVirusData: Codable {
     var Countries: [Countries]
+    var Global: Global
 }
 
 struct Countries:  Codable{
@@ -19,3 +20,9 @@ struct Countries:  Codable{
     var TotalRecovered:Int
 }
 
+struct Global: Codable {
+    var NewConfirmed: Int
+    var TotalConfirmed : Int
+    var TotalRecovered: Int
+    var TotalDeaths: Int
+}

@@ -18,7 +18,7 @@ struct CoronaVirusManager {
     var delegate: CoronaVirusManagerDelegate?
     var source = Sources()
     
- 
+    
     func getTheDataFromAPI() -> Void {
         let apiURL = source.coronaVirusAPILink
         performReqeust(apiURL: apiURL)
@@ -39,10 +39,10 @@ struct CoronaVirusManager {
                 }
                 if let safeData = data
                 {
-                   if let casesOverview =  self.parseJSON(coronavirusData: safeData)
-                   {
-                    self.delegate?.didUpdateTheCases(coronaVirusCases: casesOverview)
-                   }
+                    if let casesOverview =  self.parseJSON(coronavirusData: safeData)
+                    {
+                        self.delegate?.didUpdateTheCases(coronaVirusCases: casesOverview)
+                    }
                 }
             }
             
@@ -56,14 +56,8 @@ struct CoronaVirusManager {
         {
             let decodedData = try decoder.decode(CoronaVirusData.self, from: coronavirusData)
             
-            let totalCases = decodedData.Countries[28].TotalConfirmed
-            let recoveredCases = decodedData.Countries[28].TotalRecovered
-            let totalDealths = decodedData.Countries[28].TotalDeaths
-            let newCasesToday = decodedData.Countries[28].NewConfirmed
+            let coronaVirusModel = CoronaVirusModel(totalCases: decodedData.Countries[28].TotalConfirmed, totalRecovered: decodedData.Countries[28].TotalRecovered, totalDeath: decodedData.Countries[28].TotalDeaths, totalNewCases: decodedData.Countries[28].NewConfirmed, globalTotalCases: decodedData.Global.TotalConfirmed, globalRecoveredCases: decodedData.Global.TotalRecovered, globalDeath: decodedData.Global.TotalDeaths, globalNewcases: decodedData.Global.NewConfirmed)
             
-            
-            let coronaVirusModel = CoronaVirusModel(totalCases: totalCases, totalRecovered: recoveredCases, totalDeath: totalDealths, totalNewCases: newCasesToday)
-           
             return coronaVirusModel
             
         }
@@ -71,7 +65,7 @@ struct CoronaVirusManager {
         {
             print("error block 2: \(error)")
             return nil
-
+            
         }
     }
 }

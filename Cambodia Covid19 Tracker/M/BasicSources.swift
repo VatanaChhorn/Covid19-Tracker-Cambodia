@@ -14,10 +14,23 @@ struct Sources {
     let coronaVirusAPILink = "https://api.covid19api.com/summary"
     
     struct Userdefualts {
+        //MARK: - Local Data
         static let newCasesData = "NewCasesData"
         static let recoveredCasesData = "RecoverCasesData"
         static let todayCasesData = "TodayCasesData"
         static let deathCasesData = "DeathCasesData"
+        //MARK: - Global Data
+        static let globalNewCases = "GlobalNewCases"
+        static let globalConfirmed = "GlobalConfirmed"
+        static let globalDeaths = "GlobalDeaths"
+        static let globalRecovered = "GlobalRecovered"
+        //MARK: - Setting Data
         static let checkInternetConnection = "internet"
+        static let notification = "SetNotificationOff"
     }
+    
+    struct Settings {
+        static let switchingData = "SwitchingBetweenLocalToGlobal"
+    }
+    
 }

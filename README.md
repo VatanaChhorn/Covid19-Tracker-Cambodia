@@ -26,15 +26,11 @@ An IOS application which getting the data from a trustable website (API) in orde
 
 - Automatically add the API Fetching data to Userdefault. 
 
-### Error Alert 
-
-`*Update: I found the API provider in RapidAPI which updating the data every 15 minutes, I will tryna find some spare time to update the API Link.` 
-
 ### Things to be working on 
 
 - [x] Push notification every day at 8 Am. 
 - [x] Alert the user when the internet is disconnected. 
-- Switching between Cambodia, and Global data. 
+- [x] Switching between Cambodia, and Global data. 
 
 ### Added Opinion
 

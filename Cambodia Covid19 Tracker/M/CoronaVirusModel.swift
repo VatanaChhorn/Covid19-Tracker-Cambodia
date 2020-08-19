@@ -13,6 +13,11 @@ struct CoronaVirusModel {
     let totalRecovered: Int
     let totalDeath: Int
     let totalNewCases: Int
+    let globalTotalCases: Int
+    let globalRecoveredCases: Int
+    let globalDeath: Int
+    let globalNewcases: Int
+    
     
     var getTotalCases: String
     {

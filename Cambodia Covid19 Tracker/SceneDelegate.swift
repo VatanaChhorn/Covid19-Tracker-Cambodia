@@ -42,26 +42,25 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
     }
     
     func sceneDidEnterBackground(_ scene: UIScene) {
-        print("sceneDidEnterBackground")
-        let content = UNMutableNotificationContent()
-        content.sound = UNNotificationSound.default
-        content.title = "Covid19 Tracker Cambodia"
-        content.subtitle = "Bring your mask every time you're going out!"
-        content.body = "The last time you checked was \(defaults.integer(forKey: Sources.Userdefualts.newCasesData)) cases in total.\nDon't be panic, strictly follow recommendations of the local government and stay safe. ✨"
-        
-        var dateComp = DateComponents()
-        dateComp.hour = 8
-        dateComp.minute = 0
-        
-        let trigger = UNCalendarNotificationTrigger(dateMatching: dateComp, repeats: true)
-        let request = UNNotificationRequest(identifier: UUID().uuidString, content: content, trigger: trigger)
-        UNUserNotificationCenter.current().add(request) { (error) in
-            if let error = error {
-                print("Push local notification error: \(error)")
+        //MARK: - Local notification
+        if !defaults.bool(forKey: Sources.Userdefualts.notification) {
+            let content = UNMutableNotificationContent()
+            content.sound = UNNotificationSound.default
+            content.title = "Covid19 Tracker Cambodia"
+            content.subtitle = "Bring your mask every time you're going out!"
+            content.body = "The last time you checked was \(defaults.integer(forKey: Sources.Userdefualts.newCasesData)) cases in total.\nDon't be panic, strictly follow recommendations of the local government and stay safe. ✨"
+            var dateComp = DateComponents()
+            dateComp.hour = 8
+            dateComp.minute = 0
+            let trigger = UNCalendarNotificationTrigger(dateMatching: dateComp, repeats: true)
+            let request = UNNotificationRequest(identifier: UUID().uuidString, content: content, trigger: trigger)
+            UNUserNotificationCenter.current().add(request) { (error) in
+                if let error = error {
+                    print("Push local notification error: \(error)")
+                }
             }
-        }
-        
-        
+            defaults.set(true, forKey: Sources.Userdefualts.notification)
+        } 
     }
     
 }
