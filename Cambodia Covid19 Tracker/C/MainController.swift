@@ -35,6 +35,9 @@ class MainController: UIViewController {
         //Declare delegate and call the functions
         DispatchQueue.main.asyncAfter(deadline: .now() + 5.0)  {
             if self.defaults.bool(forKey: Sources.Userdefualts.checkInternetConnection) == true {
+                //heptic feedback
+                let generator = UINotificationFeedbackGenerator()
+                generator.notificationOccurred(.error)
                 let alert = UIAlertController(title: "Connection Failed 🤯", message: "The Internet connection appears to be offline.", preferredStyle: .alert)
                 alert.addAction(UIAlertAction(title: "Understood", style: .default, handler:  { (action) in
                     self.view.alpha = 1
@@ -59,6 +62,9 @@ class MainController: UIViewController {
     }
     
     @IBAction func liveUpdateButtonClicked(_ sender: UIButton) {
+        //heptic notificaiton
+        let generator = UISelectionFeedbackGenerator()
+        generator.selectionChanged()
         performSegue(withIdentifier: source.secondSreenSegue, sender: self)
         
     }
@@ -72,6 +78,10 @@ class MainController: UIViewController {
             self.totalCasesLabel.text = String(UserDefaults.standard.integer(forKey: Sources.Userdefualts.newCasesData))
             religionButton.setBackgroundImage(#imageLiteral(resourceName: "Region Column"), for: UIControl.State.normal)
         }
+        
+        //heptic notificaiton
+        let generator = UISelectionFeedbackGenerator()
+        generator.selectionChanged()
     }
 }
 
@@ -83,14 +93,20 @@ extension MainController: CoronaVirusManagerDelegate
         DispatchQueue.main.async {
             
             if self.defaults.bool(forKey: Sources.Settings.switchingData) {
+                //update label
                 self.totalCasesLabel.text = String(coronaVirusCases.globalTotalCases)
             } else {
+                //update label
                 self.totalCasesLabel.text = String(coronaVirusCases.getTotalCases)
             }
             
             // Setup local data to Userdefault
             if ( coronaVirusCases.totalNewCases != self.defaults.integer(forKey: Sources.Userdefualts.todayCasesData) ) || ( coronaVirusCases.totalCases != self.defaults.integer(forKey: Sources.Userdefualts.newCasesData))
-            {   
+            {
+                //heptic feedback
+                let generator = UINotificationFeedbackGenerator()
+                generator.notificationOccurred(.success)
+                //Update data to userdefaults
                 self.defaults.set(coronaVirusCases.totalCases, forKey: Sources.Userdefualts.newCasesData)
                 self.defaults.set(coronaVirusCases.totalRecovered, forKey: Sources.Userdefualts.recoveredCasesData)
                 self.defaults.set(coronaVirusCases.totalNewCases, forKey: Sources.Userdefualts.todayCasesData)
@@ -100,6 +116,10 @@ extension MainController: CoronaVirusManagerDelegate
             // Setup global data to UserDefault
             if ( coronaVirusCases.globalNewcases != self.defaults.integer(forKey: Sources.Userdefualts.globalNewCases) ) || ( coronaVirusCases.globalTotalCases != self.defaults.integer(forKey: Sources.Userdefualts.globalConfirmed))
             {
+                //heptic feedback
+                let generator = UINotificationFeedbackGenerator()
+                generator.notificationOccurred(.success)
+                //Update data to userdefaults
                 self.defaults.set(coronaVirusCases.globalTotalCases, forKey: Sources.Userdefualts.globalConfirmed)
                 self.defaults.set(coronaVirusCases.globalNewcases, forKey: Sources.Userdefualts.globalNewCases)
                 self.defaults.set(coronaVirusCases.globalDeath, forKey: Sources.Userdefualts.globalDeaths)

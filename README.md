@@ -22,15 +22,13 @@ An IOS application which getting the data from a trustable website (API) in orde
 - Providing accurate statistic. 
 - Fast, easy, and convenient for user to check the data. 
 
-### Updated 
-
-- Automatically add the API Fetching data to Userdefault. 
-
-### Things to be working on 
+### Things to be working on and has updated
 
 - [x] Push notification every day at 8 Am. 
 - [x] Alert the user when the internet is disconnected. 
 - [x] Switching between Cambodia, and Global data. 
+- [x] Automatically add the API Fetching data to local data persistent. 
+- [x] add heptic feedback. 
 
 ### Added Opinion
 
@@ -41,12 +39,12 @@ will appear on the screen, as well as Adobe Xd, and Illustrator for some pieces 
 
 
 <p align="left">
-<a href="https://www.instagram.com/vatana.chhorn/" target="blank"><img align="center" src="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/instagram.svg" alt="kushal.bhanot" height="60" width="60" /></a> &nbsp;&nbsp;
-<a href="https://twitter.com/vatana_chhorn" target="blank"><img align="center" src="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/twitter.svg" alt="bhanot_kushal" height="60" width="60" /></a> &nbsp;&nbsp;
-<a href="https://www.facebook.com/vatan4c" target="blank"><img align="center" src="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/facebook.svg" alt="kushal.bhanot.98" height="60" width="60" /></a> &nbsp;&nbsp;
-<a href="https://open.spotify.com/user/onlyvatana23?si=-McUZw0zTj-a8SvbVe1qZA" target="blank"><img align="center" src="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/spotify.svg" alt="kushal.bhanot.98" height="60" width="60" /></a> &nbsp;&nbsp;
-  <a href="https://www.goodreads.com/user/show/83098234-vatana-chhorn" target="blank"><img align="center" src="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/goodreads.svg" alt="kushal.bhanot.98" height="60" width="60" /></a> &nbsp;&nbsp;
-   <a href="https://unsplash.com/@vatanachhorn" target="blank"><img align="center" src="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/unsplash.svg" alt="kushal.bhanot.98" height="60" width="60" /></a> &nbsp;&nbsp;
+<a href="https://www.instagram.com/vatana.chhorn/" target="blank"><img align="center" src="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/instagram.svg" alt="kushal.bhanot" height="30" width="30" /></a> &nbsp;&nbsp;
+<a href="https://twitter.com/vatana_chhorn" target="blank"><img align="center" src="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/twitter.svg" alt="bhanot_kushal" height="30" width="30" /></a> &nbsp;&nbsp;
+<a href="https://www.facebook.com/vatan4c" target="blank"><img align="center" src="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/facebook.svg" alt="kushal.bhanot.98" height="30" width="30" /></a> &nbsp;&nbsp;
+<a href="https://open.spotify.com/user/onlyvatana23?si=-McUZw0zTj-a8SvbVe1qZA" target="blank"><img align="center" src="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/spotify.svg" alt="kushal.bhanot.98" height="30" width="30" /></a> &nbsp;&nbsp;
+  <a href="https://www.goodreads.com/user/show/83098234-vatana-chhorn" target="blank"><img align="center" src="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/goodreads.svg" alt="kushal.bhanot.98" height="30" width="30" /></a> &nbsp;&nbsp;
+   <a href="https://unsplash.com/@vatanachhorn" target="blank"><img align="center" src="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/unsplash.svg" alt="kushal.bhanot.98" height="30" width="30" /></a> &nbsp;&nbsp;
 </p>
 
 
