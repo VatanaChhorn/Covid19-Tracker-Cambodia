@@ -46,6 +46,8 @@ class MainController: UIViewController {
                 self.present(alert, animated: true, completion: nil)
                 print("Triggered")
             }
+            let generator = UISelectionFeedbackGenerator()
+            generator.prepare()
         }
         
         //Display the defualtData to the Screen
