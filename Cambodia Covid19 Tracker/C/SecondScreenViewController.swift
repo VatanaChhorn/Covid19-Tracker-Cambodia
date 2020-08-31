@@ -34,7 +34,7 @@ class SecondScreenViewController: UIViewController {
             
             recoveredCases.text = String(defaults.integer(forKey: Sources.Userdefualts.globalRecovered))
             
-            totalCases.text = String(defaults.integer(forKey: Sources.Userdefualts.globalConfirmed))
+            totalCases.text = String(defaults.integer(forKey: Sources.Userdefualts.globalConfirmed) - defaults.integer(forKey: Sources.Userdefualts.globalRecovered))
             
             todayCases.text = String(defaults.integer(forKey: Sources.Userdefualts.globalNewCases))
             
@@ -46,7 +46,7 @@ class SecondScreenViewController: UIViewController {
             
             recoveredCases.text = String(defaults.integer(forKey: Sources.Userdefualts.recoveredCasesData))
             
-            totalCases.text = String(defaults.integer(forKey: Sources.Userdefualts.newCasesData))
+            totalCases.text = String(defaults.integer(forKey: Sources.Userdefualts.newCasesData) - defaults.integer(forKey: Sources.Userdefualts.recoveredCasesData))
             
             todayCases.text = String(defaults.integer(forKey: Sources.Userdefualts.todayCasesData))
             
