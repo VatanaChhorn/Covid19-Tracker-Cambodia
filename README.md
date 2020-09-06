@@ -1,4 +1,6 @@
-![Mock_up_image](https://github.com/VatanaChhorn/Covid19-Tracker-Cambodia/blob/master/Covid19%20Tracker%20Header.png)
+# COVID-19 TRACKER CAMBODIA
+
+<img src="https://github.com/VatanaChhorn/Covid19-Tracker-Cambodia/blob/master/Covid19%20Tracker%20Header.png" alt="Paris">
 
 ### Overview 
 
