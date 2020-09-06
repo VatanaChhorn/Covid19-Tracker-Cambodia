@@ -1,4 +1,4 @@
-# Covid19 Tracker Cambodia
+![Mock_up_image](https://github.com/VatanaChhorn/Covid19-Tracker-Cambodia/blob/master/Covid19%20Tracker%20Header.png)
 
 ### Overview 
 
