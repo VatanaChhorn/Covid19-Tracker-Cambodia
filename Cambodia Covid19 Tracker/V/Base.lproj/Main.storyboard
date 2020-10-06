@@ -17,50 +17,6 @@
         </array>
     </customFonts>
     <scenes>
-        <!--View Controller-->
-        <scene sceneID="4Hc-lk-ma8">
-            <objects>
-                <viewController modalPresentationStyle="fullScreen" id="28q-P3-40r" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="94B-KI-Cv3">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aF8-El-7KX">
-                                <rect key="frame" x="10" y="44" width="35" height="35"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="35" id="8df-r5-Lrd"/>
-                                    <constraint firstAttribute="width" constant="35" id="gbZ-kn-qW9"/>
-                                </constraints>
-                                <color key="tintColor" red="0.93333333330000001" green="0.93333333330000001" blue="0.93333333330000001" alpha="1" colorSpace="calibratedRGB"/>
-                                <state key="normal" image="chevron.backward" catalog="system">
-                                    <preferredSymbolConfiguration key="preferredSymbolConfiguration" scale="large"/>
-                                </state>
-                                <connections>
-                                    <segue destination="BYZ-38-t0r" kind="show" id="cH6-c6-gm6"/>
-                                </connections>
-                            </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Learn More About The Virus" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vEE-XB-S8O">
-                                <rect key="frame" x="56.666666666666657" y="49" width="261.66666666666674" height="24"/>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
-                                <color key="textColor" red="0.93333333330000001" green="0.93333333330000001" blue="0.93333333330000001" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                        </subviews>
-                        <viewLayoutGuide key="safeArea" id="VzO-0u-7qM"/>
-                        <color key="backgroundColor" red="0.2304191887" green="0.36203122139999999" blue="0.49021238090000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                        <constraints>
-                            <constraint firstItem="aF8-El-7KX" firstAttribute="top" secondItem="VzO-0u-7qM" secondAttribute="top" id="IWX-gM-WVS"/>
-                            <constraint firstItem="aF8-El-7KX" firstAttribute="leading" secondItem="VzO-0u-7qM" secondAttribute="leading" constant="10" id="dUR-8F-ZEi"/>
-                            <constraint firstItem="vEE-XB-S8O" firstAttribute="centerX" secondItem="94B-KI-Cv3" secondAttribute="centerX" id="e3u-dD-DkM"/>
-                            <constraint firstItem="vEE-XB-S8O" firstAttribute="top" secondItem="VzO-0u-7qM" secondAttribute="top" constant="5" id="ho7-Fv-rYG"/>
-                        </constraints>
-                    </view>
-                    <navigationItem key="navigationItem" id="WKV-PJ-EcD"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="73D-FI-bhG" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="124" y="1003"/>
-        </scene>
         <!--Main Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
@@ -287,7 +243,6 @@
                                                                                                                 <state key="normal" backgroundImage="Learn More Button"/>
                                                                                                                 <connections>
                                                                                                                     <action selector="learnMoreButtonClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Tt1-5R-ukb"/>
-                                                                                                                    <segue destination="28q-P3-40r" kind="show" id="3Gc-WC-0UK"/>
                                                                                                                 </connections>
                                                                                                             </button>
                                                                                                         </subviews>
@@ -511,7 +466,7 @@
                                                                                                 <rect key="frame" x="0.0" y="0.0" width="161.66666666666666" height="103.66666666666667"/>
                                                                                             </imageView>
                                                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text=" 0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="a3M-Dv-eLa">
-                                                                                                <rect key="frame" x="70.666666666666671" y="42.666666666666657" width="20.333333333333329" height="28"/>
+                                                                                                <rect key="frame" x="71.333333333333329" y="42.333333333333314" width="18.666666666666671" height="28.666666666666671"/>
                                                                                                 <fontDescription key="fontDescription" name="SFCompactRounded-Medium" family="SF Compact Rounded" pointSize="24"/>
                                                                                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                                                 <nil key="highlightedColor"/>
@@ -534,7 +489,7 @@
                                                                                                 <rect key="frame" x="0.0" y="0.0" width="161.33333333333334" height="103.66666666666667"/>
                                                                                             </imageView>
                                                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="F9b-xY-giz">
-                                                                                                <rect key="frame" x="73.666666666666657" y="42.666666666666657" width="13.666666666666671" height="28"/>
+                                                                                                <rect key="frame" x="73.666666666666657" y="42.333333333333314" width="14" height="28.666666666666671"/>
                                                                                                 <fontDescription key="fontDescription" name="SFCompactRounded-Medium" family="SF Compact Rounded" pointSize="24"/>
                                                                                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                                                 <nil key="highlightedColor"/>
@@ -577,7 +532,7 @@
                                                                                                 <rect key="frame" x="0.0" y="0.0" width="162" height="103.66666666666667"/>
                                                                                             </imageView>
                                                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VU2-gi-JD1">
-                                                                                                <rect key="frame" x="74.333333333333329" y="42.666666666666686" width="13.666666666666671" height="28"/>
+                                                                                                <rect key="frame" x="74" y="42.333333333333314" width="14" height="28.666666666666671"/>
                                                                                                 <fontDescription key="fontDescription" name="SFCompactRounded-Medium" family="SF Compact Rounded" pointSize="24"/>
                                                                                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                                                 <nil key="highlightedColor"/>
@@ -600,7 +555,7 @@
                                                                                                 <rect key="frame" x="0.0" y="0.0" width="162" height="103.66666666666667"/>
                                                                                             </imageView>
                                                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KLm-ib-Dac">
-                                                                                                <rect key="frame" x="74.333333333333314" y="42.666666666666686" width="13.666666666666671" height="28"/>
+                                                                                                <rect key="frame" x="74" y="42.333333333333314" width="14" height="28.666666666666671"/>
                                                                                                 <fontDescription key="fontDescription" name="SFCompactRounded-Medium" family="SF Compact Rounded" pointSize="24"/>
                                                                                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                                                 <nil key="highlightedColor"/>
@@ -735,7 +690,6 @@
         <image name="TItile Bar" width="140" height="46"/>
         <image name="Today Background" width="146" height="85"/>
         <image name="Upper Background" width="376" height="340"/>
-        <image name="chevron.backward" catalog="system" width="96" height="128"/>
         <image name="chevron.compact.down" catalog="system" width="128" height="43"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
