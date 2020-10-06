@@ -31,6 +31,7 @@ An IOS application which getting the data from a trustable website (API) in orde
 - [x] Switching between Cambodia, and Global data. 
 - [x] Automatically add the API Fetching data to local data persistent. 
 - [x] add heptic feedback. 
+- Add new infomation about the virus page
 
 ### Added Opinion
 
