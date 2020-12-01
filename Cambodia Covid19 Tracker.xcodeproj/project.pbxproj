@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		35AD7E222530752100FEF401 /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 35AD7E212530752100FEF401 /* WidgetKit.framework */; };
+		35AD7E242530752100FEF401 /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 35AD7E232530752100FEF401 /* SwiftUI.framework */; };
+		35AD7E302530752200FEF401 /* BriefDataWidgetExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 35AD7E1F2530752100FEF401 /* BriefDataWidgetExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		891736A524B6FF2100206336 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 891736A424B6FF2100206336 /* AppDelegate.swift */; };
 		891736A724B6FF2100206336 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 891736A624B6FF2100206336 /* SceneDelegate.swift */; };
 		891736A924B6FF2100206336 /* MainController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 891736A824B6FF2100206336 /* MainController.swift */; };
@@ -23,7 +26,34 @@
 		89B570DC24BDB6C6007694AB /* SecondScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89B570DB24BDB6C6007694AB /* SecondScreenViewController.swift */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		35AD7E2E2530752200FEF401 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8917369924B6FF2000206336 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 35AD7E1E2530752100FEF401;
+			remoteInfo = BriefDataWidgetExtension;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		35AD7E342530752200FEF401 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				35AD7E302530752200FEF401 /* BriefDataWidgetExtension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		35AD7E1F2530752100FEF401 /* BriefDataWidgetExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = BriefDataWidgetExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		35AD7E212530752100FEF401 /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
+		35AD7E232530752100FEF401 /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
 		891736A124B6FF2000206336 /* Covid19 Tracker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Covid19 Tracker.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		891736A424B6FF2100206336 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		891736A624B6FF2100206336 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -43,6 +73,15 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		35AD7E1C2530752100FEF401 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				35AD7E242530752100FEF401 /* SwiftUI.framework in Frameworks */,
+				35AD7E222530752100FEF401 /* WidgetKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		8917369E24B6FF2000206336 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -53,10 +92,20 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		35AD7E202530752100FEF401 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				35AD7E212530752100FEF401 /* WidgetKit.framework */,
+				35AD7E232530752100FEF401 /* SwiftUI.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		8917369824B6FF2000206336 = {
 			isa = PBXGroup;
 			children = (
 				891736A324B6FF2000206336 /* Cambodia Covid19 Tracker */,
+				35AD7E202530752100FEF401 /* Frameworks */,
 				891736A224B6FF2000206336 /* Products */,
 				89B570D624BDB65D007694AB /* Bonus items */,
 			);
@@ -66,6 +115,7 @@
 			isa = PBXGroup;
 			children = (
 				891736A124B6FF2000206336 /* Covid19 Tracker.app */,
+				35AD7E1F2530752100FEF401 /* BriefDataWidgetExtension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -126,6 +176,23 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		35AD7E1E2530752100FEF401 /* BriefDataWidgetExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 35AD7E312530752200FEF401 /* Build configuration list for PBXNativeTarget "BriefDataWidgetExtension" */;
+			buildPhases = (
+				35AD7E1B2530752100FEF401 /* Sources */,
+				35AD7E1C2530752100FEF401 /* Frameworks */,
+				35AD7E1D2530752100FEF401 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BriefDataWidgetExtension;
+			productName = BriefDataWidgetExtension;
+			productReference = 35AD7E1F2530752100FEF401 /* BriefDataWidgetExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 		891736A024B6FF2000206336 /* Cambodia Covid19 Tracker */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 891736B524B6FF2300206336 /* Build configuration list for PBXNativeTarget "Cambodia Covid19 Tracker" */;
@@ -133,10 +200,12 @@
 				8917369D24B6FF2000206336 /* Sources */,
 				8917369E24B6FF2000206336 /* Frameworks */,
 				8917369F24B6FF2000206336 /* Resources */,
+				35AD7E342530752200FEF401 /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				35AD7E2F2530752200FEF401 /* PBXTargetDependency */,
 			);
 			name = "Cambodia Covid19 Tracker";
 			productName = "Cambodia Covid19 Tracker";
@@ -149,10 +218,13 @@
 		8917369924B6FF2000206336 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 1150;
+				LastSwiftUpdateCheck = 1200;
 				LastUpgradeCheck = 1200;
 				ORGANIZATIONNAME = "Chhorn Vatana";
 				TargetAttributes = {
+					35AD7E1E2530752100FEF401 = {
+						CreatedOnToolsVersion = 12.0.1;
+					};
 					891736A024B6FF2000206336 = {
 						CreatedOnToolsVersion = 11.5;
 					};
@@ -172,11 +244,19 @@
 			projectRoot = "";
 			targets = (
 				891736A024B6FF2000206336 /* Cambodia Covid19 Tracker */,
+				35AD7E1E2530752100FEF401 /* BriefDataWidgetExtension */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		35AD7E1D2530752100FEF401 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		8917369F24B6FF2000206336 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -193,6 +273,13 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		35AD7E1B2530752100FEF401 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		8917369D24B6FF2000206336 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -209,6 +296,14 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		35AD7E2F2530752200FEF401 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 35AD7E1E2530752100FEF401 /* BriefDataWidgetExtension */;
+			targetProxy = 35AD7E2E2530752200FEF401 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		891736AA24B6FF2100206336 /* Main.storyboard */ = {
@@ -230,6 +325,52 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		35AD7E322530752200FEF401 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3P96VF2954;
+				INFOPLIST_FILE = BriefDataWidget/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "dev.vatanachhorn.Cambodia-Covid19-Tracker.BriefDataWidget";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		35AD7E332530752200FEF401 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3P96VF2954;
+				INFOPLIST_FILE = BriefDataWidget/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "dev.vatanachhorn.Cambodia-Covid19-Tracker.BriefDataWidget";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 		891736B324B6FF2300206336 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -355,7 +496,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 3P96VF2954;
 				INFOPLIST_FILE = "Cambodia Covid19 Tracker/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -377,7 +518,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 3P96VF2954;
 				INFOPLIST_FILE = "Cambodia Covid19 Tracker/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -393,6 +534,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		35AD7E312530752200FEF401 /* Build configuration list for PBXNativeTarget "BriefDataWidgetExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				35AD7E322530752200FEF401 /* Debug */,
+				35AD7E332530752200FEF401 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		8917369C24B6FF2000206336 /* Build configuration list for PBXProject "Cambodia Covid19 Tracker" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

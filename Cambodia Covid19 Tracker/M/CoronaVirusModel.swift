@@ -8,7 +8,7 @@
 
 import Foundation
 
-struct CoronaVirusModel {
+ struct CoronaVirusModel {
     let totalCases: Int
     let totalRecovered: Int
     let totalDeath: Int
