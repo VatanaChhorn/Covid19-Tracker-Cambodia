@@ -18,7 +18,6 @@ struct CoronaVirusManager {
     var delegate: CoronaVirusManagerDelegate?
     var source = Sources()
     
-    
     func getTheDataFromAPI() -> Void {
         let apiURL = source.coronaVirusAPILink
         performReqeust(apiURL: apiURL)
