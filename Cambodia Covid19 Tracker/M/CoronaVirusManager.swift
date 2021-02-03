@@ -41,10 +41,10 @@ struct CoronaVirusManager {
                     if let casesOverview =  self.parseJSON(coronavirusData: safeData)
                     {
                         self.delegate?.didUpdateTheCases(coronaVirusCases: casesOverview)
+                        UserDefaults.standard.set(false, forKey: Sources.Userdefualts.checkInternetConnection)
                     }
                 }
             }
-            
             task.resume()
         }
     }

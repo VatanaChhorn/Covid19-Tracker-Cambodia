@@ -10,12 +10,17 @@ import UIKit
 
 class MainController: UIViewController {
     
+    // MARK: - PROPERTIES
+    
     @IBOutlet weak var totalCasesLabel: UILabel!
     @IBOutlet weak var religionButton: UIButton!
+    @IBOutlet weak var totalCasesButtomLabel : UILabel!
     
     var coronaVirusManager = CoronaVirusManager()
     let source = Sources()
     let defaults = UserDefaults.standard
+    
+    // MARK: - BODY
     
     override func viewWillAppear(_ animated: Bool) {
         coronaVirusManager.delegate = self
@@ -27,9 +32,11 @@ class MainController: UIViewController {
         //Checking the button background Image
         if self.defaults.bool(forKey: Sources.Settings.switchingData) {
             religionButton.setBackgroundImage(#imageLiteral(resourceName: "GlobalButton"), for: UIControl.State.normal)
+            self.totalCasesButtomLabel.text = "Total Cases"
         } else
         {
             religionButton.setBackgroundImage(#imageLiteral(resourceName: "Region Column"), for: UIControl.State.normal)
+            self.totalCasesButtomLabel.text = "ករណីសរុប"
         }
         
         //Declare delegate and call the functions
@@ -44,7 +51,6 @@ class MainController: UIViewController {
                 }))
                 self.view.alpha = 0.2
                 self.present(alert, animated: true, completion: nil)
-                print("Triggered")
             }
             let generator = UISelectionFeedbackGenerator()
             generator.prepare()
@@ -59,6 +65,7 @@ class MainController: UIViewController {
     }
     
     //MARK: - Button Functions
+    
     @IBAction func learnMoreButtonClicked(_ sender: UIButton) {
         UIApplication.shared.open(URL(string: source.learnMoreLink)!)
     }
@@ -76,9 +83,11 @@ class MainController: UIViewController {
         if defaults.bool(forKey: Sources.Settings.switchingData) {
             self.totalCasesLabel.text = String(defaults.integer(forKey: Sources.Userdefualts.globalConfirmed))
             religionButton.setBackgroundImage(#imageLiteral(resourceName: "GlobalButton"), for: UIControl.State.normal)
+            self.totalCasesButtomLabel.text = "Total Cases"
         }   else {
             self.totalCasesLabel.text = String(UserDefaults.standard.integer(forKey: Sources.Userdefualts.newCasesData))
             religionButton.setBackgroundImage(#imageLiteral(resourceName: "Region Column"), for: UIControl.State.normal)
+            self.totalCasesButtomLabel.text = "ករណីសរុប"
         }
         
         //heptic notificaiton
@@ -89,6 +98,7 @@ class MainController: UIViewController {
 
 
 //MARK: - Delegate extensions
+
 extension MainController: CoronaVirusManagerDelegate
 {
     func didUpdateTheCases(coronaVirusCases: CoronaVirusModel) {

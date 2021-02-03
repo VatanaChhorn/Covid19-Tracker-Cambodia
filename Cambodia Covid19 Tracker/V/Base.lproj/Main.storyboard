@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina5_9" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17125"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -90,18 +90,18 @@
                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DkL-ua-gxr" userLabel="Cases Overview">
                                                         <rect key="frame" x="0.0" y="87.666666666666643" width="375" height="155.33333333333337"/>
                                                         <subviews>
-                                                            <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="DOk-aG-DeF">
+                                                            <stackView opaque="NO" contentMode="scaleToFill" spacing="-30" translatesAutoresizingMaskIntoConstraints="NO" id="DOk-aG-DeF">
                                                                 <rect key="frame" x="0.0" y="0.0" width="375" height="155.33333333333334"/>
                                                                 <subviews>
                                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mfi-km-obn" userLabel="Space">
-                                                                        <rect key="frame" x="0.0" y="0.0" width="183.66666666666666" height="155.33333333333334"/>
+                                                                        <rect key="frame" x="0.0" y="0.0" width="202.66666666666666" height="155.33333333333334"/>
                                                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                     </view>
                                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Sgx-6R-hPK" userLabel="Total Cases">
-                                                                        <rect key="frame" x="191.66666666666663" y="0.0" width="183.33333333333337" height="155.33333333333334"/>
+                                                                        <rect key="frame" x="172.66666666666663" y="0.0" width="202.33333333333337" height="155.33333333333334"/>
                                                                         <subviews>
                                                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="hIO-VT-A1y">
-                                                                                <rect key="frame" x="11.666666666666686" y="34.666666666666679" width="160" height="86.333333333333314"/>
+                                                                                <rect key="frame" x="21" y="14.666666666666686" width="160" height="86.333333333333329"/>
                                                                                 <subviews>
                                                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="V7d-jE-UAf" userLabel="Total Cases Label">
                                                                                         <rect key="frame" x="0.0" y="0.0" width="160" height="48"/>
@@ -126,7 +126,7 @@
                                                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                         <constraints>
                                                                             <constraint firstItem="hIO-VT-A1y" firstAttribute="centerX" secondItem="Sgx-6R-hPK" secondAttribute="centerX" id="0Mk-fb-37X"/>
-                                                                            <constraint firstItem="hIO-VT-A1y" firstAttribute="centerY" secondItem="Sgx-6R-hPK" secondAttribute="centerY" id="fRl-zk-dZf"/>
+                                                                            <constraint firstItem="hIO-VT-A1y" firstAttribute="centerY" secondItem="Sgx-6R-hPK" secondAttribute="centerY" constant="-20" id="fRl-zk-dZf"/>
                                                                         </constraints>
                                                                     </view>
                                                                 </subviews>
@@ -401,6 +401,7 @@
                     <navigationItem key="navigationItem" id="iOB-WL-POu"/>
                     <connections>
                         <outlet property="religionButton" destination="F08-Ev-0E3" id="oAS-va-KGR"/>
+                        <outlet property="totalCasesButtomLabel" destination="kw3-uI-dPt" id="Uh2-tw-Ruq"/>
                         <outlet property="totalCasesLabel" destination="V7d-jE-UAf" id="X8L-QT-JLW"/>
                     </connections>
                 </viewController>
@@ -465,7 +466,7 @@
                                                                                                 <rect key="frame" x="0.0" y="0.0" width="161.66666666666666" height="103.66666666666667"/>
                                                                                             </imageView>
                                                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text=" 0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="a3M-Dv-eLa">
-                                                                                                <rect key="frame" x="70.666666666666671" y="42.666666666666657" width="20.333333333333329" height="28"/>
+                                                                                                <rect key="frame" x="71.333333333333329" y="42.333333333333314" width="18.666666666666671" height="28.666666666666671"/>
                                                                                                 <fontDescription key="fontDescription" name="SFCompactRounded-Medium" family="SF Compact Rounded" pointSize="24"/>
                                                                                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                                                 <nil key="highlightedColor"/>
@@ -488,7 +489,7 @@
                                                                                                 <rect key="frame" x="0.0" y="0.0" width="161.33333333333334" height="103.66666666666667"/>
                                                                                             </imageView>
                                                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="F9b-xY-giz">
-                                                                                                <rect key="frame" x="73.666666666666657" y="42.666666666666657" width="13.666666666666671" height="28"/>
+                                                                                                <rect key="frame" x="73.666666666666657" y="42.333333333333314" width="14" height="28.666666666666671"/>
                                                                                                 <fontDescription key="fontDescription" name="SFCompactRounded-Medium" family="SF Compact Rounded" pointSize="24"/>
                                                                                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                                                 <nil key="highlightedColor"/>
@@ -531,7 +532,7 @@
                                                                                                 <rect key="frame" x="0.0" y="0.0" width="162" height="103.66666666666667"/>
                                                                                             </imageView>
                                                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VU2-gi-JD1">
-                                                                                                <rect key="frame" x="74.333333333333329" y="42.666666666666686" width="13.666666666666671" height="28"/>
+                                                                                                <rect key="frame" x="74" y="42.333333333333314" width="14" height="28.666666666666671"/>
                                                                                                 <fontDescription key="fontDescription" name="SFCompactRounded-Medium" family="SF Compact Rounded" pointSize="24"/>
                                                                                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                                                 <nil key="highlightedColor"/>
@@ -554,7 +555,7 @@
                                                                                                 <rect key="frame" x="0.0" y="0.0" width="162" height="103.66666666666667"/>
                                                                                             </imageView>
                                                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KLm-ib-Dac">
-                                                                                                <rect key="frame" x="74.333333333333314" y="42.666666666666686" width="13.666666666666671" height="28"/>
+                                                                                                <rect key="frame" x="74" y="42.333333333333314" width="14" height="28.666666666666671"/>
                                                                                                 <fontDescription key="fontDescription" name="SFCompactRounded-Medium" family="SF Compact Rounded" pointSize="24"/>
                                                                                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                                                 <nil key="highlightedColor"/>
