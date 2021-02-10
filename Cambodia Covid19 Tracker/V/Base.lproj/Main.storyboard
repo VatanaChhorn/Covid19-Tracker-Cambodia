@@ -98,17 +98,17 @@
                                                 <rect key="frame" x="0.0" y="370" width="375" height="550"/>
                                                 <subviews>
                                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Items" translatesAutoresizingMaskIntoConstraints="NO" id="0A3-gZ-3id">
-                                                        <rect key="frame" x="2.6666666666666572" y="22" width="370" height="173"/>
+                                                        <rect key="frame" x="7.6666666666666572" y="22" width="360" height="173"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" relation="lessThanOrEqual" constant="200" id="Vwj-YZ-cW3"/>
-                                                            <constraint firstAttribute="width" constant="370" id="ald-cJ-O39"/>
+                                                            <constraint firstAttribute="width" constant="360" id="ald-cJ-O39"/>
                                                         </constraints>
                                                     </imageView>
                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XLB-EK-sGp">
-                                                        <rect key="frame" x="2.6666666666666572" y="430" width="370" height="100"/>
+                                                        <rect key="frame" x="7.6666666666666572" y="430" width="360" height="100"/>
                                                         <subviews>
                                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Live Update" translatesAutoresizingMaskIntoConstraints="NO" id="6Ic-Q7-5I3">
-                                                                <rect key="frame" x="0.0" y="0.0" width="370" height="100"/>
+                                                                <rect key="frame" x="0.0" y="0.0" width="360" height="100"/>
                                                             </imageView>
                                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="3or-ih-dFu" userLabel="Live update">
                                                                 <rect key="frame" x="16.000000000000014" y="20" width="239.33333333333337" height="60"/>
@@ -131,7 +131,7 @@
                                                                 </constraints>
                                                             </stackView>
                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Whx-GS-4Fp">
-                                                                <rect key="frame" x="284" y="15" width="70" height="70"/>
+                                                                <rect key="frame" x="274" y="15" width="70" height="70"/>
                                                                 <constraints>
                                                                     <constraint firstAttribute="width" constant="70" id="AZ1-Kh-KsC"/>
                                                                     <constraint firstAttribute="height" constant="70" id="rqv-8T-xfL"/>
@@ -152,15 +152,15 @@
                                                             <constraint firstAttribute="height" constant="100" id="eQO-zV-zmD"/>
                                                             <constraint firstAttribute="trailing" secondItem="6Ic-Q7-5I3" secondAttribute="trailing" id="fAF-G5-5Gd"/>
                                                             <constraint firstAttribute="bottom" secondItem="6Ic-Q7-5I3" secondAttribute="bottom" id="kYw-u0-aMe"/>
-                                                            <constraint firstAttribute="width" constant="370" id="pAv-AL-1xg"/>
+                                                            <constraint firstAttribute="width" constant="360" id="pAv-AL-1xg"/>
                                                             <constraint firstItem="6Ic-Q7-5I3" firstAttribute="top" secondItem="XLB-EK-sGp" secondAttribute="top" id="ucF-qj-F4X"/>
                                                         </constraints>
                                                     </view>
                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="80P-LS-d1K">
-                                                        <rect key="frame" x="2.6666666666666572" y="220" width="370" height="200"/>
+                                                        <rect key="frame" x="7.6666666666666572" y="220" width="360" height="200"/>
                                                         <subviews>
                                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Avatar" translatesAutoresizingMaskIntoConstraints="NO" id="nwN-qp-zt8">
-                                                                <rect key="frame" x="220" y="-15" width="150" height="215"/>
+                                                                <rect key="frame" x="210" y="-15" width="150" height="215"/>
                                                                 <constraints>
                                                                     <constraint firstAttribute="width" constant="150" id="RVt-6g-Zk7"/>
                                                                 </constraints>
@@ -194,7 +194,7 @@ Simptoms</string>
                                                         <color key="backgroundColor" red="0.19464972620000001" green="0.29145959020000001" blue="0.41570144889999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                         <constraints>
                                                             <constraint firstItem="GLQ-IV-7DZ" firstAttribute="centerY" secondItem="80P-LS-d1K" secondAttribute="centerY" id="7LS-T6-f5I"/>
-                                                            <constraint firstAttribute="width" constant="370" id="AAJ-IU-cWp"/>
+                                                            <constraint firstAttribute="width" constant="360" id="AAJ-IU-cWp"/>
                                                             <constraint firstAttribute="trailing" secondItem="nwN-qp-zt8" secondAttribute="trailing" id="BTo-JM-NGN"/>
                                                             <constraint firstAttribute="bottom" secondItem="nwN-qp-zt8" secondAttribute="bottom" id="Ngo-42-vDZ"/>
                                                             <constraint firstItem="GLQ-IV-7DZ" firstAttribute="leading" secondItem="80P-LS-d1K" secondAttribute="leading" constant="20" id="Oze-uS-etN"/>
@@ -461,7 +461,7 @@ Simptoms</string>
                                 </constraints>
                             </stackView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="OVS-ca-UMi">
-                                <rect key="frame" x="2.6666666666666572" y="524" width="370" height="180"/>
+                                <rect key="frame" x="7.6666666666666572" y="524" width="360" height="180"/>
                                 <subviews>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Avatar" translatesAutoresizingMaskIntoConstraints="NO" id="Czp-lq-viY">
                                         <rect key="frame" x="5" y="-35" width="150" height="215"/>
@@ -472,7 +472,7 @@ Simptoms</string>
                                         </constraints>
                                     </imageView>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="RUz-iZ-NKv">
-                                        <rect key="frame" x="158" y="40.999999999999993" width="182" height="98.333333333333314"/>
+                                        <rect key="frame" x="148" y="40.999999999999993" width="182" height="98.333333333333314"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QjC-c0-zfO">
                                                 <rect key="frame" x="0.0" y="0.0" width="150" height="48"/>
@@ -495,7 +495,7 @@ Medical Support!  </string>
                                         </subviews>
                                     </stackView>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="wN3-YP-Ul7">
-                                        <rect key="frame" x="320" y="10" width="40" height="40"/>
+                                        <rect key="frame" x="310" y="10" width="40" height="40"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="40" id="Ami-HW-u94"/>
                                             <constraint firstAttribute="height" constant="40" id="Q8m-A0-dzW"/>
@@ -507,7 +507,7 @@ Medical Support!  </string>
                                     <constraint firstItem="RUz-iZ-NKv" firstAttribute="centerY" secondItem="OVS-ca-UMi" secondAttribute="centerY" id="SNh-qY-sWZ"/>
                                     <constraint firstAttribute="bottom" secondItem="Czp-lq-viY" secondAttribute="bottom" id="XNP-en-4N3"/>
                                     <constraint firstItem="wN3-YP-Ul7" firstAttribute="top" secondItem="OVS-ca-UMi" secondAttribute="top" constant="10" id="XOj-R4-GFV"/>
-                                    <constraint firstAttribute="width" constant="370" id="bR2-Jn-TsL"/>
+                                    <constraint firstAttribute="width" constant="360" id="bR2-Jn-TsL"/>
                                     <constraint firstAttribute="trailing" secondItem="wN3-YP-Ul7" secondAttribute="trailing" constant="10" id="rd7-0d-HkZ"/>
                                     <constraint firstAttribute="trailing" secondItem="RUz-iZ-NKv" secondAttribute="trailing" constant="30" id="sWU-VY-Atf"/>
                                     <constraint firstAttribute="height" constant="180" id="tBM-ep-lln"/>
